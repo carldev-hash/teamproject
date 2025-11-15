@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Portfolio Project</title>
+    <title>Logic Lord - Team Portfolio</title>
     <meta
       name="description"
       content="A portfolio project showcasing the work of our team." />
@@ -14,17 +14,17 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <main>
-      <section class="hero-section" id="home">
+      <section class="hero-section" id="home" aria-labelledby="hero-heading">
         <header>
           <div class="logo">
-            <a href="#">Logic Lord</a>
+            <a href="#home" aria-label="Logic Lord Home">Logic Lord</a>
           </div>
-          <nav class="nav__list">
-            <li><a href="#home" class="active">Home</a></li>
+          <nav class="nav__list" aria-label="Main navigation">
+            <li><a href="#home" class="active" aria-current="page">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#team_members">Members</a></li>
             <li><a href="#project">Project</a></li>
@@ -34,20 +34,21 @@
 
         <div class="hero-container">
           <div class="hero-content">
-            <h1>Building Innovative Digital Solutions Together</h1>
+            <h1 id="hero-heading">Building Innovative Digital Solutions Together</h1>
             <p>
-              We’re a team of passionate developers, designers, and
-              problem-solvers turning ideas into powerful web
+              We're a team of passionate developers, designers, and
+              problem-solvers turning ideas into powerful web experiences.
             </p>
-            <button>Meet the Team</button>
+            <button type="button" aria-label="Navigate to team members section">Meet the Team</button>
           </div>
           <div class="hero-image">
-            <img src="./assets/team-spirit.png" alt="hero-image" />
+            <img src="./assets/team-spirit.png" alt="Team collaboration and spirit illustration" />
           </div>
         </div>
       </section>
-      <section class="about_team" id="about">
-        <h2>About The Team</h2>
+
+      <section class="about_team" id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About The Team</h2>
         <div class="about_team_container">
           <div class="about_team_content">
             <p>
@@ -57,113 +58,108 @@
             </p>
           </div>
           <div class="about_team_image">
-            <img src="assets/example.png" alt="about_team" />
+            <img src="assets/example.png" alt="Team members working together on a project" />
           </div>
         </div>
-        <div class="skills_container">
-            <div class="skill">
-                <img src="./assets/java.png" alt="java-logo">
-            </div>
-            <div class="skill">
-                <img src="./assets/javascript.png" alt="javascript-logo">
-            </div>
-            <div class="skill">
-                <img src="./assets/python.png" alt="python-logo">
-            </div>
-            <div class="skill">
-                <img src="./assets/php.png" alt="php-logo">
-            </div>
-            <div class="skill">
-                <img src="./assets/canva.png" alt="canva-logo">
-            </div>
-            <div class="skill">
-                <img src="./assets/mysql.png" alt="mysql-logo">
-            </div>
-            
+        <div class="skills_container" role="list" aria-label="Team technical skills">
+          <div class="skill" role="listitem">
+            <img src="./assets/java.png" alt="Java programming language" />
+          </div>
+          <div class="skill" role="listitem">
+            <img src="./assets/javascript.png" alt="JavaScript programming language" />
+          </div>
+          <div class="skill" role="listitem">
+            <img src="./assets/python.png" alt="Python programming language" />
+          </div>
+          <div class="skill" role="listitem">
+            <img src="./assets/php.png" alt="PHP programming language" />
+          </div>
+          <div class="skill" role="listitem">
+            <img src="./assets/canva.png" alt="Canva design tool" />
+          </div>
+          <div class="skill" role="listitem">
+            <img src="./assets/mysql.png" alt="MySQL database" />
+          </div>
         </div>
       </section>
 
-      <section class="team_members" id="team_members">
-        <h2>Team Members</h2>
+      <section class="team_members" id="team_members" aria-labelledby="members-heading">
+        <h2 id="members-heading">Team Members</h2>
         <div class="members_container">
-            <div class="member_card">
-                <img src="./assets/carl.png" alt="carl" />
-                <h3>Carl Peñaranda</h3>
-                <p>Frontend Developer</p>
-            </div>
-            <div class="member_card">
-                <img src="./assets/maricel.png" alt="maricel" />
-                <h3>Maricel Tomogon</h3>
-                <p>UX/UI Designer</p>
-            </div>
-            <div class="member_card">
-                <img src="./assets/jerhon.png" alt="jerhon" />
-                <h3>Jerhon Undangan</h3>
-                <p>Project Manager</p>
-            </div>
-            <div class="member_card">
-                <img src="./assets/jillian.png" alt="member4" />
-                <h3>Jillian Lozano</h3>
-                <p>Backend Developer</p>
-            </div>
-            <div class="member_card">
-                <img src="./assets/paula.png" alt="paula" />
-                <h3>Paula Nudalo</h3>
-                <p>System Analyst</p>
-            </div>
-            <!-- <div class="member_card">
-                <img src="./assets/jay.png" alt="jay" />
-                <h3>Jay Parian</h3>
-                <p>Boss Amo Manager</p>
-            </div> -->
+          <article class="member_card">
+            <img src="./assets/carl.png" alt="Portrait of Carl Peñaranda" />
+            <h3>Carl Peñaranda</h3>
+            <p>Frontend Developer</p>
+          </article>
+          <article class="member_card">
+            <img src="./assets/maricel.png" alt="Portrait of Maricel Tomogon" />
+            <h3>Maricel Tomogon</h3>
+            <p>UX/UI Designer</p>
+          </article>
+          <article class="member_card">
+            <img src="./assets/jerhon.png" alt="Portrait of Jerhon Undangan" />
+            <h3>Jerhon Undangan</h3>
+            <p>Project Manager</p>
+          </article>
+          <article class="member_card">
+            <img src="./assets/jillian.png" alt="Portrait of Jillian Lozano" />
+            <h3>Jillian Lozano</h3>
+            <p>Backend Developer</p>
+          </article>
+          <article class="member_card">
+            <img src="./assets/paula.png" alt="Portrait of Paula Nudalo" />
+            <h3>Paula Nudalo</h3>
+            <p>System Analyst</p>
+          </article>
         </div>
-       
       </section>
-      <section class="projects" id="project">
-        <h2>Projects</h2>
+
+      <section class="projects" id="project" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
         <div class="projects_container">
-            <div class="project_card">
-                <img src="./assets/project1.png" alt="project1" />
-                <h3>Shopify E-commerce</h3>
-                <p>Designed and developed a fully custom Shopify theme for a premium retail brand, integrating specialized inventory management tools and enhancing conversion through tailored UX flows.</p>
-            </div>
-            <div class="project_card">
-                <img src="./assets/project2.png" alt="project2" />
-                <h3>Online Voting System</h3>
-                <p>Developed an encrypted, audited online voting system featuring blockchain verification, ensuring transparency and tamper-proof integrity for large-scale organizational elections.p>
-            </div>
+          <article class="project_card">
+            <img src="./assets/project1.png" alt="Screenshot of Shopify e-commerce website interface" />
+            <h3>Shopify E-commerce</h3>
+            <p>Designed and developed a fully custom Shopify theme for a premium retail brand, integrating specialized inventory management tools and enhancing conversion through tailored UX flows.</p>
+          </article>
+          <article class="project_card">
+            <img src="./assets/project2.png" alt="Screenshot of online voting system dashboard" />
+            <h3>Online Voting System</h3>
+            <p>Developed an encrypted, audited online voting system featuring blockchain verification, ensuring transparency and tamper-proof integrity for large-scale organizational elections.</p>
+          </article>
+        </div>
       </section>
-      <section class="contact" id="contact">
-        <h2>Contact Us</h2>
+
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
         <div class="contact_container">
-            <form class="contact_form">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+          <form class="contact_form" method="post" action="#" aria-label="Contact form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" />
+            <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true" />
+            <textarea id="message" name="message" placeholder="Your Message" required aria-required="true"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </section>
-      <footer>
-        <p>&copy; 2025 Logic Lord. All rights reserved.</p>
-        <div class="social_links">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-      </footer>
     </main>
 
+    <footer>
+      <p>&copy; 2025 Logic Lord. All rights reserved.</p>
+      <nav class="social_links" aria-label="Social media links">
+        <a href="#" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Visit our Twitter page"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+      </nav>
+    </footer>
+
     <script>
-        const btn = document.querySelector("button");
+      const btn = document.querySelector(".hero-content button");
+      if (btn) {
         btn.addEventListener("click", () => {
-        //    btn.style.backgroundColor = '#222831';
-        btn.style.transform = 'scale(1.05)';
+          btn.style.transform = 'scale(1.05)';
+          document.getElementById('team_members').scrollIntoView({ behavior: 'smooth' });
         });
+      }
     </script>
   </body>
 </html>
-
- 
-
-
